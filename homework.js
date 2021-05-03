@@ -15,7 +15,7 @@ document.getElementById("tekstas").innerHTML = tekstas;
 document.getElementById("spalva").innerHTML = spalva;
 
 arr.unshift({autorius: 'Autorius', tekstas: 'Testas', kiekis: 5, grupe: { vardas: 'Kestas', amzius: 65 }})
-document.getElementById("objektas").innerHTML = (arr[0].autorius+' '+arr[0].tekstas+' '+arr[0].kiekis+' {'+arr[0].grupe.vardas+', '+arr[0].grupe.amzius+'}');
+document.getElementById("objektas").innerHTML = (`${arr[0].autorius} ${arr[0].tekstas} ${arr[0].kiekis} {${arr[0].grupe.vardas}, ${arr[0].grupe.amzius}}`);
 
 document.getElementById("ilgis").innerHTML = arr.length;
 
